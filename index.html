@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ATOS Open 2026 - Chaveamento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="brand">
+          <div class="badge">
+            <img
+              class="logo"
+              src="WhatsApp%20Image%202026-02-18%20at%2018.15.48.jpeg"
+              alt="Logo ATOS Open 2026"
+            />
+          </div>
+          <div class="title-block">
+            <p class="eyebrow">ATOS OPEN 2026</p>
+            <h1>Sorteio de Chaveamento</h1>
+            <p class="sub">
+              Insira os participantes, sorteie os confrontos e acompanhe o mata-mata completo.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Participantes</h2>
+          <p class="hint">Um nome por linha. Para 12 atletas, o sistema cria 4 byes no primeiro round.</p>
+        </div>
+        <div class="input-area">
+          <textarea id="names" rows="10" placeholder="Ex: Rafael Nadal\nNovak Djokovic\n..." spellcheck="false"></textarea>
+          <div class="actions">
+            <button id="shuffle" class="primary">Sortear Chaveamento</button>
+            <button id="clear" class="ghost">Limpar</button>
+            <button id="demo" class="ghost">Carregar Exemplo (12)</button>
+          </div>
+          <div class="meta" id="meta"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Chaveamento</h2>
+          <p class="hint">Clique em um nome para avançar manualmente o vencedor de cada jogo.</p>
+        </div>
+        <div id="bracket" class="bracket"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>ATOS Open 2026 • Torneio de Tênis</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
